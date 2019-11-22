@@ -3,7 +3,8 @@
 angular.module('webappApp')
   .controller('MainCtrl', function ($scope, $http, $location) {
     $scope.awesomeThings = [];
-
+    document.getElementById("searchField").focus();
+    
     $scope.search = function(userID) {
     	$scope.userID = userID;
 
